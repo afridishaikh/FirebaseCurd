@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>HTML</title>
+  
+  <!-- HTML -->
+  
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+ 
+  NGO Name : <input type="text" id="Nname"> <br />
+  NGO Type : <input type="text" id="Ntype"> <br />
+  NGO Photo : <input type="text" id="Nphoto"> <br />
+  NGO UPI : <input type="text" id="Nupi" value="" /> <br />
+  NGO Email :<input type="email" id="Nemail" /> <br />
+  Mobile Number : <input type="number" id="Nnumber" /> <br />
+  Set Username <input type="text" id="Nusername" value="" /> <br />
+  Set Password : <input type="password" id="Npassword" value="" /> <br />
+  
+  <input type="button" name="submit" onclick="insert();"/>
+  
+  
+  
+  NGO name : <input type="text" id="user" value="" /> <br />
+  
+  <input type="button" name="submit" onclick="data();"/>
+  
+  
+  <p> name : <strong id="name"> </strong> </p>
+  <p> type : <strong id="type"> </strong> </p>
+  <p> upi : <strong id="upi"> </strong> </p>
+  <p> email : <strong id="email"> </strong> </p>
+  <script src="Upload.js"> </script>
+  
+  
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.15.0/firebase.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyBwxUFKFWY2vjH-iR9lB-uwP281RSvnVkg",
+    authDomain: "captionking-e69d4.firebaseapp.com",
+    databaseURL: "https://captionking-e69d4.firebaseio.com",
+    projectId: "captionking-e69d4",
+    storageBucket: "captionking-e69d4.appspot.com",
+    messagingSenderId: "696666623204",
+    appId: "1:696666623204:web:68c55bde3c28183fc870f1",
+    measurementId: "G-WK8QZ2NJWM"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+</body>
+</html>
